@@ -44,9 +44,9 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             </div>
         </div>
 
-        <div className="grid grid-cols-3">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-1">
             
-            <div className="col-span-2">
+            <div className="lg:col-span-2 sm:col-span-1">
                 <Tabs config = {[
                     {header: "Description", component: <Description description={property.description}/>},
                     {header: "What we offer", component: <Amenity amenities={property.category}/>},
